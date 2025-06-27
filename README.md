@@ -16,7 +16,7 @@ A simple console chatbot in Python that utilizes the OpenAI GPT-4o-mini API. Fea
 project/
 ├── .env.sample
 ├── .gitignore
-├── chat.py # Main entry point
+├── main.py # Main entry point
 ├── Pipfile # Python dependencies
 └── utils/
     ├── chat.py # Chat class implementation
@@ -41,7 +41,7 @@ project/
    OPENAI_API_KEY=your-openai-key
 
 3. **Run the chatbot:**
-   pipenv run python chat.py
+   pipenv run python main.py
 
 ## How to Use the Chat
 
@@ -60,7 +60,7 @@ project/
 
 ## Main Files
 
-- `chat.py` — main script entrypoint
+- `main.py` — main script entrypoint
 - `utils/chat.py` — Chat class
 - `utils/spinner.py` — spinner animation
 - `utils/typewriter.py` — typewriter animation
