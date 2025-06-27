@@ -94,7 +94,12 @@ Note: Only text-based models are supported. By default, you can omit these varia
 ### Example with parameters:
 
 ```python
+from utils.chat import Chat
+
+# Create an instance of Chat
 chat = Chat(model="gpt-4", message="Thinking")
+
+# Start the chat loop (console interaction begins)
 chat.chat()
 ```
 
