@@ -1,6 +1,12 @@
-# Console GPT Chat
+# Console Chatbot (Python, GPT-4o-mini)
 
-A simple console chatbot in Python that utilizes the OpenAI GPT-4o-mini API. Features typewriter animation and a spinner during API requests.
+A simple and interactive command-line chatbot written in Python, powered by the OpenAI GPT-4o-mini API.
+
+## Requirements
+
+- Python 3.7+
+- [pipenv](https://pipenv.pypa.io/) for dependency management
+- OpenAI API key
 
 ## Features
 
@@ -23,11 +29,6 @@ project/
     ├── spinner.py # Spinner animation
     └── typewriter.py # Typewriter text effect
 ```
-
-## Requirements
-
-- Python 3.12+
-- OpenAI API key
 
 ## Installation
 
