@@ -31,12 +31,17 @@ project/
 
 ## Installation
 
-1. **Install dependencies using pipenv:**
+1. **Install pipenv**
+   ```
+   pip install pipenv
+   ```
+
+2. **Install dependencies using pipenv:**
    ```
    pipenv install
    ```
 
-2. **Create `.env` from `.env.sample` and set your `OPENAI_API_KEY`:**
+3. **Create `.env` from `.env.sample` and set your `OPENAI_API_KEY`:**
    ```
    cp .env.sample .env
    ```
@@ -44,7 +49,7 @@ project/
    Then edit `.env` and add your API key:
    OPENAI_API_KEY=your-openai-key
 
-3. **Run the chatbot:**
+4. **Run the chatbot:**
    ```
    pipenv run python main.py
    ```
