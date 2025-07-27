@@ -4,7 +4,7 @@ A simple and interactive command-line chatbot written in Python, powered by the 
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.12+
 - [pipenv](https://pipenv.pypa.io/) for dependency management
 - OpenAI API key
 
