@@ -63,13 +63,14 @@ class Chat:
             )
         except Exception as e:
             self.spinner.stop()
-            if e.code == "invalid_api_key":
-                typewriter(
-                    "Please double-check your OPENAI_API_KEY and your OpenAI account balance.",
-                    style="bold red",
-                )
-            else:
-                print(f"Error: {e}")
+
+            error_json = e.response.json()
+            message = error_json["error"]["message"]
+
+            typewriter(
+                message,
+                style="bold red",
+            )
             sys.exit()
 
         # If a valid response is received, save it and return the content
