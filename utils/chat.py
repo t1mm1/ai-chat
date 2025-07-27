@@ -7,7 +7,6 @@ from utils.spinner import Spinner
 
 
 class Chat:
-
     def __init__(self, model="gpt-4o-mini", message=""):
         """
         Initialize the Chat class:
