@@ -62,7 +62,14 @@ class Chat:
                 messages=self.messages,
             )
         except Exception as e:
-            typewriter(f"Error: {e}")
+            self.spinner.stop()
+            if e.code == "invalid_api_key":
+                typewriter(
+                    "Please double-check your OPENAI_API_KEY and your OpenAI account balance.",
+                    style="bold red",
+                )
+            else:
+                print(f"Error: {e}")
             sys.exit()
 
         # If a valid response is received, save it and return the content
@@ -74,7 +81,10 @@ class Chat:
             return message.content
 
         # If not, notify user and exit
-        typewriter("No responce from OpenAI, try later.")
+        typewriter(
+            "No responce from OpenAI, try later.",
+            style="bold red",
+        )
         sys.exit()
 
     def __run(self):
