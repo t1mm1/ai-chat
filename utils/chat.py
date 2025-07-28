@@ -71,6 +71,8 @@ class Chat:
                 style="bold red",
             )
             sys.exit()
+        finally:
+            self.spinner.stop()
 
         # If a valid response is received, save it and return the content
         if responce.choices[0].message:
@@ -97,6 +99,7 @@ class Chat:
 
         # Get assistant response
         content = self.__request()
+
         self.spinner.stop()
         return content
 
